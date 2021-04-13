@@ -1,0 +1,88 @@
+//  fonts
+
+@mixin fr {
+  font-family: 'Roboto-Regular';
+}
+@mixin fl {
+  font-family: 'Roboto-Light';
+}
+@mixin fm {
+  font-family: 'Roboto-Medium';
+}
+@mixin fb {
+  font-family: 'Roboto-Bold';
+}
+@mixin fbl {
+  font-family: 'Roboto-Black';
+}
+
+
+
+
+
+
+
+// Other
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin box-shadow($radius) {
+  -webkit-box-shadow: $radius;
+  -moz-box-shadow: $radius;
+  box-shadow: $radius;
+}
+@mixin border($border){
+  border-bottom: $border;
+  border-top: $border;
+  border-right: $border;
+  border-left: $border;
+}
+@mixin white_border($width) {
+  border-color: $white;
+  border-style: solid;
+  border-width: $width;
+}
+@mixin black_border($width) {
+  border-color: $black;
+  border-style: solid;
+  border-width: $width;
+}
+@mixin light_border($width) {
+  border-color: #b3b3b3;
+  border-style: solid;
+  border-width: $width;
+}
+@mixin double_border($width) {
+  border-color: #fff;
+  border-style: solid;
+  border-width: $width;
+  -webkit-box-shadow: 0 0 0 $width #ccc;
+  -moz-box-shadow: 0 0 0 $width #ccc;
+  box-shadow: 0 0 0 $width #ccc;
+}
+@mixin after_border($after) {
+  content: "";
+  display: block;
+  height: 2px;
+  width: $after;
+  margin-top: 5px;
+}
+@mixin scrollbar($color) {
+  &::-webkit-scrollbar-track  {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    background-color: $white;
+  }
+  &::-webkit-scrollbar {
+    width: 6px;
+    background-color: $white;
+  }
+  &::-webkit-scrollbar-thumb  {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.3);
+    background-color: $color;
+  }
+}

@@ -1,0 +1,396 @@
+/* =================================
+ 04 Home
+=================================*/
+.check_list {
+    li {background-image: url(../img/check-icon.png); padding-left: 30px; background-repeat: no-repeat; font-size: 18px;}
+}
+
+.home { margin-top: 80px;
+    h1{font-size: 34px; font-weight: 900; text-align: center; margin-bottom: 50px;}
+    h2{font-size: 24px; font-weight: 900;}
+}
+
+.infoBox {
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba($color: #E56207, $alpha: 1.0);
+    padding: 30px;
+    h6{font-size: 24px;}
+    .media { margin-top: 25px;
+        color: $color-primary;
+        p{
+            margin-bottom: 0;
+            line-height: 21px;
+            margin-top: 15px;
+        }
+    }
+    @media (max-width:1400px){
+        padding: 15px;
+        h6 {
+            font-size: 20px;
+        }
+        p{line-height: 24px;}
+    }
+}
+
+.BOx2 { text-align: center;
+    h6 {font-size: 26px; font-weight: 600;}
+}
+
+.contactBox { margin-bottom: 30px;
+    background-color:$color-primary; border-radius: 4px; padding: 30px; color: #fff;
+h6, .h6{font-size: 34px; font-weight: 900; vertical-align: middle;}
+p{font-size: 18px; margin: 15px 0;}
+.btn {background-color: $color-secondary; font-weight: 700; margin-left: 10px;
+    padding: 15px 40px;
+}
+}
+
+.connectBox2 { margin-bottom: 50px;
+    .serbay {background-color:#E56207; text-align: center; color: #fff; padding: 30px; border-radius: 4px;
+        h3{font-size: 34px; margin-bottom: 30px;}
+    }
+    .check_list {
+        li{display: inline-block;
+            background-image: url(../img/check-icon-white.png);
+            box-shadow: 0 0 6px;
+    padding: 5px 34px 5px 50px;
+    margin: 10px;
+    border-radius: 4px;
+    background-position: 10px 8px;
+    background-color: #000;
+    font-weight: 700;
+        }
+
+    
+    }
+
+}
+
+@media (max-width:1400px){
+    .check_list li{ font-size: 16px !important;}
+}
+
+.headingLine {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+    position: relative;
+    h6{font-size: 24px; font-weight: 500;}
+    &::before {
+        content: "";
+        width: 100px;
+        height: 1px;
+        background-color: $color-primary;
+        position: absolute;
+    bottom: 0;
+    }
+}
+
+.winBox {box-shadow: 0 0 6px rgba($color: #000000, $alpha: .16); text-align: center; padding: 25px;}
+
+.title {font-weight: 900; font-size: 34px; margin-bottom: 50px;}
+
+.box { text-align: center; 
+    figure {margin-bottom: 0px;overflow: hidden;
+        img {object-fit: cover; width: 100%; height: 100%; transition: transform .2s; /* Animation */ }
+    }
+    P{background-color: $color-primary; font-size: 20px; font-weight: bold; color: #fff; padding: 10px 0;}
+    &:hover {
+        figure img {  transform: scale(1.2);}
+      
+    }
+    @media (min-width: 2000px){
+        margin-bottom: 30px;
+p {font-size: 30px;
+        padding: 18px 0;
+        margin-bottom: 0px
+    }
+}
+}
+
+.news {
+    background-color: #E6EAF6;
+    padding: 50px 0;
+    margin-top: 50px;
+
+    .box p{background-color: #fff; color:$color-primary ;}
+    .Gallery{background-color:$color-primary;}
+}
+
+.download {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#193354+0,475d77+100 */
+background: rgb(25,51,84); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(25,51,84,1) 0%, rgba(71,93,119,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(25,51,84,1) 0%,rgba(71,93,119,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(25,51,84,1) 0%,rgba(71,93,119,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#193354', endColorstr='#475d77',GradientType=1 ); /* IE6-9 */
+padding: 80px 150px;
+margin-top: 200px;
+border-radius: 10px;
+.herobaner {
+    img {
+        position: absolute;
+        bottom: -80px;
+        min-width: 450px;
+    }
+}
+
+h6 {font-size: 44px; font-weight: 700; color: #fff; margin-bottom: 30px;}
+@media (max-width:1400px){
+    padding: 80px 80px;
+    margin-top: 150px;
+}
+}
+
+
+.survy { text-align: center;
+    p{background-color: $color-primary; font-size: 30px;
+    font-weight: 900;
+        color: #fff;
+    padding: 15px;
+    margin-bottom: 0;}
+    figure { max-height:350px; overflow: hidden;
+        img {object-fit: cover; width: 100%; height: 100%;}
+    }
+}
+
+.survy2 {
+        border-top: 15px solid #e56207;
+        figure {margin-bottom: 0px;}
+    .survyLink { background-color: #333333; padding:15px 5px;
+        font-size: 34px; font-weight: 900; text-align: center;
+        a{ color: #fff;  }
+    }
+}
+
+.cont {
+    padding:50px 0;
+    h6{text-align: center;}
+}
+
+.numb, .conttBt {
+    padding: 15px;
+    text-align: right;
+    font-size: 34px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+    a {color: #fff;}
+}
+
+.numb {background-color: $color-primary;}
+.conttBt {background-color: $color-secondary}
+
+.searchitem {
+    input{
+        height: calc(2.5em + .75rem + 2px);     padding: .375rem 3rem;
+        & ~ i {position: absolute; top: 17px; left: 17px; z-index: 10;}
+    }
+    .btn-success {background-color: $color-primary; border-color: $color-primary; font-weight: 600 }
+}
+
+
+// Knowledge base
+
+.kb-box { box-shadow:0 3px 6px rgba(#000, 0.16); margin-bottom: 30px;
+    .card-header {background-color:rgba(#E56207, 0.1); border-bottom:none;
+        font-size: 24px; font-weight: 700; color: $color-primary;
+    }
+    .btn-primary {background-color:$color-primary; border-color: $color-primary; font-weight: 600; }
+}
+
+.down2 {
+    background-color:#E6EAF6;
+    .download { border-radius: 0; margin: 130px 0 50px;}
+    .herobaner img {
+    position: absolute;
+    bottom: -48px;
+    min-width: 367px;
+}
+figure {background-color:#E6EAF6; border-right: 20px solid $color-primary; margin-bottom: 0;  -ms-transform: skewX(-20deg); /* IE 9 */
+  transform: skewX(-20deg);   position: relative;
+    z-index: 1;     right: -76px;
+    img {    margin-top: 50px;
+        -ms-transform: skewX(20deg); /* IE 9 */
+  transform: skewX(20deg);
+    }
+}
+
+}
+
+
+
+.s-slide {
+//     .slick-prev {
+//     left: 25px !important;
+// }
+.slick-prev:before, .slick-next:before { font-size: 34px;  opacity: 1;}
+.slick-next, .slick-prev {background: $color-primary;
+    padding: 25px 14px;
+    width: 40px;
+    height: 40px;}
+.item {
+    img {object-fit: cover; width: 100%; height: 100%; padding: 0 15px}
+}
+.slick-dots {     bottom: -40px;
+    li{
+        &.slick-active {
+            button:before {color:$color-primary; }
+        }
+    }
+}
+
+}
+
+.oterSerice {background-color: #E6EAF6; padding: 30px 0;}
+
+
+// responsive
+
+    @media (min-width: 2000px){
+.f-18 {
+    font-size: 24px !important;
+}
+.f-14 {
+    font-size: 22px !important;
+}
+.check_list li {
+    font-size: 24px;
+}
+body {
+    font-size: 22px;
+}
+    }
+
+@media (max-width:1440px){
+    .headingLine h6 {
+        font-size: 20px;
+    }
+
+   .down2 .download h6 {
+    font-size: 24px;
+    padding:0;
+}
+.down2 .herobaner img {
+    min-width: 267px !important;
+    bottom: -49px !important;
+}
+.down2 .download {
+    margin: 90px 0 25px;
+}
+}
+
+@media (max-width:1200px){
+.down2 .download {
+    margin: 50px 0 25px;
+}
+}
+
+@media (min-width:1000px) and (max-width:1400px){
+    .download {    padding: 40px; margin-top: 100px;
+        h6 {
+                padding: 42px;
+    font-size: 25px;
+}
+.herobaner img {
+    position: absolute;
+    bottom: -40px;
+    min-width: 363px;
+}
+    }
+}
+
+@media (max-width:1200px){
+    nav li { position:relative;
+        a {
+            padding: .5rem 0 !important;
+            .arrow {
+            top: 8px;
+        }
+}
+li {
+    a{display: block; padding: 0.2rem 12px !important;}
+    }
+}
+.dropmenu { height: 70vh; overflow: auto; 
+    background-color: #eee;
+    .container {padding: 0px;}
+}
+
+.down2 .download h6 {
+    font-size: 24px;
+    padding: 0;
+}
+.down2 .download {
+    margin: 25px 0 25px;
+}
+}
+@media (max-width:992px){
+
+.home h1 {
+    font-size: 24px;
+}
+.infoBox {
+    margin-bottom: 20px;
+}
+.winBox {
+    margin-bottom: 15px;
+}
+.download h6 {
+    font-size: 24px;
+}
+.download {margin-top: 70px;
+    padding: 35px;
+    a{ display: inline-block;}
+}
+.numb, .conttBt {
+    text-align: center;
+        margin-bottom: 15px;
+        font-size: 21px;
+    padding: 6px;
+}
+.survy2 .survyLink {
+    padding: 5px;
+    font-size: 16px;
+}
+footer .copyright {
+    text-align: center;
+}
+.dropmenu .container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.down2 figure {
+    -ms-transform: skewX(0deg);
+     transform: skewX(0deg); 
+    right: 0px; border:none;
+    img {
+    margin-top: 50px;
+    -ms-transform: skewX(0deg);
+    transform: skewX(0deg);
+}
+}
+}
+
+
+
+@media (max-width:767px){ 
+    .download {
+    a {margin-top: 15px; display: block;}
+}
+.hover-text {
+            h1 { font-size: 23px !important; }
+        }
+       .dropmenu .btn-contact {
+    display: block;
+    margin-bottom: 10px;
+    padding: .5rem 12px !important;
+}
+.title {
+    font-size: 23px;
+    margin-bottom: 28px;
+}
+.cont {
+    padding: 50px 15px;
+}
+}

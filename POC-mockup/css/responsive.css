@@ -1,0 +1,54 @@
+
+@media (max-width:991px){
+header {
+    padding: .5rem 1rem !important;
+}
+}
+@media (max-width:767px){
+.infobox  a{font-size: 14px;}
+.log-btn a {
+    padding:5px 10px;
+    font-size: 12px !important;
+}
+.log-btn {
+    margin-top: 5px;
+}
+.navbar-brand img {
+    padding-left: 10px;
+}
+.yer-text h2 {
+    font-size: 25px;
+}
+.yer-text h5 {
+    font-size: 19px;
+    margin-top: 10px;
+}
+.about-text {
+    padding: 30px 25px;
+}
+.dre-job h2 {
+    font-size: 32px;
+}
+.dre-job {
+    padding: 50px 0;
+}
+.blog .blog-box figure {
+    width: 100%;
+}
+
+.blog .blog-box .blog-data {
+    padding-left: 0;
+}
+}
+
+
+@media (max-width:483px){
+.futcher-job ul li {
+    padding-left: 40px;
+    display: inline-block;
+    width: calc(100% - 10px);
+    color: #fff;
+    position: relative;
+}
+.blog .blog-box figure img {width: 100%; height: auto;}
+}
