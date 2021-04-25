@@ -1,5 +1,5 @@
 export const state = () => ({
-    optionsData: null
+    optionsData: []
 })
 
 export const mutations = {

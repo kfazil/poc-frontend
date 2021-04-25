@@ -100,18 +100,39 @@ export default {
       }
     });
     //console.log(_);
-    this.setOptions(response.data.options);
-
+    let optionsData = [];
     if(response.data.hasOwnProperty('options')){
       if(response.data.options[0].hasOwnProperty('settings')){
         if(response.data.options[0].settings.id == 'options'){ 
             // grab data for header
             if(response.data.options[0].hasOwnProperty('children')){
+              // footer data
               if(_.find(response.data.options[0].children, {'name': 'Footer'})){
-                console.log(response.data.options[0].children)  
+                console.log('Footer found');
+                let footer = _.find(response.data.options[0].children, {'name': 'Footer'});
               }
+
+              // header data
               if(_.find(response.data.options[0].children, {'name': 'Header'})) {
-                  console.log('Header found')  
+                  console.log('Header found');
+                  let header = _.find(response.data.options[0].children, {'name': 'Header'});
+
+                  if(_.find(header.children, {'name': 'Logo'})){
+                    optionsData.push({'logo' : _.find(header.children, {'name': 'Logo'}) });
+                  }
+
+                  if(_.find(header.children, {'name': 'Menu Button 1'})){
+                    optionsData.push({'menu_button_1' : _.find(header.children, {'name': 'Menu Button 1'}) });
+                  }
+
+                  if(_.find(header.children, {'name': 'Menu Button 2'})){
+                    optionsData.push({'menu_button_2' : _.find(header.children, {'name': 'Menu Button 2'}) });
+                  }
+
+                  if(_.find(header.children, {'name': 'Menu Button 3'})){
+                    optionsData.push({'menu_button_3' : _.find(header.children, {'name': 'Menu Button 3'}) });
+                  }
+
               }
             }
           } else {
@@ -122,8 +143,9 @@ export default {
     } else {
       console.error('Options API [LEVEL:1]: Invalid response from options api');
     }
-  
 
+    this.setOptions(optionsData);
+  
   }
 }
 </script>
